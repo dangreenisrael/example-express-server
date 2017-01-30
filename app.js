@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-app.listen(9000);
+app.listen(process.env.PORT || 5000);
 app.use(bodyParser.json());
+
 const mongoose = require('mongoose');
 let mongoUrl = 'mongodb://localhost/OpenCharades';
 if (process.env.READ_ONLY_PASSWORD){
