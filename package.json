@@ -2,7 +2,7 @@
   "name": "example-express-server",
   "version": "1.0.0",
   "description": "This is a demo express server for doing cool stuff with react",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "serve": "nodemon app.js",
