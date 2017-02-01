@@ -1,4 +1,4 @@
-const mongoose = require('./app').mongoose;
+const mongoose = require('./mongo');
 const ObjectId = mongoose.Schema.Types.ObjectId;
 
 const Category = mongoose.model('Category', {
@@ -31,3 +31,13 @@ module.exports.getCategories = () => {
     });
   });
 };
+
+// module.exports.addAction = () => {
+//   return new Promise((res, rej) => {
+//     Category.find({}).then(categories => {
+//       res(categories);
+//     }, err => {
+//       rej(err);
+//     });
+//   });
+// };
